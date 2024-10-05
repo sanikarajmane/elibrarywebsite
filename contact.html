@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- bootstrap Link -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <!-- External css,js,jquery Link -->
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./js/validaton.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <img src="./images/WhatsApp_Image_2024-09-19_at_10.53.18_AM-removebg-preview.png">
+      <h2>E-Library</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li>
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search By Title" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+            </form>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutus.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="div-1">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="div1">
+    <div class="container-xxl py-6">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 450px;">
+            <div class="position-relative h-100">
+              <iframe class="position-relative w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8792494130744!2d73.81265247343833!3d18.4891279825983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf687b954809%3A0xaf219d56f48e253a!2sSwarajya%20Abhyasika%20(Library%20%2F%20Study%20Room%20%2F%20reading%20room)!5e0!3m2!1sen!2sin!4v1726981832583!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="min-height: 450px; border:0;"
+                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <form id="form" onsubmit="return formValidation()">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control border-0 bg-light" id="email" placeholder="Your Email">
+                    <label for="email">Your Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="text" class="form-control border-0 bg-light" id="subject" placeholder="Subject">
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" id="message"
+                      style="height: 150px"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                </div>
+              </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="container1">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="">about us</a></li>
+            <li><a href="">our search</a></li>
+            <li><a href="">privacy policy</a></li>
+            <li><a href="">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Terms And Conditions</a></li>
+            <li><a href="">Delete Account Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Product Families
+          </h4>
+          <ul>
+            <li><a href="">Ex-Libris</a></li>
+            <li><a href="">Innovative</a></li>
+            <li><a href="">Alexander Street</a></li>
+            <li><a href="">Dialoug Solution</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <div class="logo">
+            <img src="./images/WhatsApp_Image_2024-09-19_at_10.53.18_AM-removebg-preview.png" height="150" width="150">
+          </div>
+
+        </div>
+      </div>
+
+  </footer>
+</body>
+
+</html>

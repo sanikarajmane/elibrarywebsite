@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap Link -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+  <!-- External css,js,jquery Link -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/aboutus.css">
+  <script src="./js/script.js"></script>
+
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      $(document).ready(function(){
+         $("#searchInput").on("keyup", function() {
+           var value = $(this).val().toLowerCase();
+           $(".card").filter(function() {
+             $(this).toggle($(this).find(".card-title").text().toLowerCase().indexOf(value) > -1)
+             
+           });
+         });
+       });
+       </script> 
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <img src="./images/WhatsApp_Image_2024-09-19_at_10.53.18_AM-removebg-preview.png">
+      <h2>E-Library</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li>
+            
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search By Title" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutus.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+          </li>
+         
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="div-head">
+  <h2>About Us</h2>
+</div>
+  <div class="section1">
+ <!-- Categories Start -->
+ <div class="container-xxl py-5 category">
+  <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      </div>
+      <div class="row g-3">
+          <div class="col-lg-7 col-md-6">
+              <div class="row g-3">
+                  <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                      <a class="position-relative d-block overflow-hidden" href="">
+                          <img class="img-fluid" src="images/cat-1.jpg" alt="">
+                          <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                              style="margin: 1px;">
+                              <h5 class="m-0">History Books</h5>
+                              <small class="text-primary">500+</small>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                      <a class="position-relative d-block overflow-hidden" href="">
+                          <img class="img-fluid" src="images/cat-2.jpg" alt="">
+                          <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                              style="margin: 1px;">
+                              <h5 class="m-0">Fantasy</h5>
+                              <small class="text-primary">3000</small>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                      <a class="position-relative d-block overflow-hidden" href="">
+                          <img class="img-fluid" src="images/cat-3.jpg" alt="">
+                          <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                              style="margin: 1px;">
+                              <h5 class="m-0">Horror</h5>
+                              <small class="text-primary">1000</small>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+              <a class="position-relative d-block h-100 overflow-hidden" href="">
+                  <img class="img-fluid position-absolute w-100 h-100" src="images/cat-4.jpg" alt=""
+                      style="object-fit: cover;">
+                  <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                      style="margin:  1px;">
+                      <h5 class="m-0">Mystry Books</h5>
+                      <small class="text-primary">200+</small>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Categories end -->
+  </div>
+  <span>
+     <p class="text-dark" >The Library of Congress is the largest library in the world, with millions of books, films and video, audio recordings, photographs, newspapers, maps and manuscripts in its collections. The Library is the main research arm of the U.S. Congress and the home of the U.S. Copyright Office.
+
+      The Library preserves and provides access to a rich, diverse and enduring source of knowledge to inform, inspire and engage you in your intellectual and creative endeavors. Whether you are new to the Library of Congress or an experienced researcher, we have a world-class staff ready to assist you online and in person.
+      
+      I encourage you to visit the Library of Congress in person in Washington, D.C., explore the Library online from wherever you are and connect with us on social media.</p>
+      <p class="text-dark">The Library of Congress is the largest library in the world, with millions of books, films and video, audio recordings, photographs, newspapers, maps and manuscripts in its collections. The Library is the main research arm of the U.S. Congress and the home of the U.S. Copyright Office.
+
+        The Library preserves and provides access to a rich, diverse and enduring source of knowledge to inform, inspire and engage you in your intellectual and creative endeavors. Whether you are new to the Library of Congress or an experienced researcher, we have a world-class staff ready to assist you online and in person.
+        </p>
+      </span>
+ <footer class="footer">
+    <div class="container1">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="">about us</a></li>
+            <li><a href="">our search</a></li>
+            <li><a href="">privacy policy</a></li>
+            <li><a href="">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Terms And Conditions</a></li>
+            <li><a href="">Delete Account Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Product Families
+          </h4>
+          <ul>
+            <li><a href="">Ex-Libris</a></li>
+            <li><a href="">Innovative</a></li>
+            <li><a href="">Alexander Street</a></li>
+            <li><a href="">Dialoug Solution</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <div class="logo">
+            <img src="./images/WhatsApp_Image_2024-09-19_at_10.53.18_AM-removebg-preview.png" height="150" width="150">
+          </div>
+        </div>
+      </div>
+
+  </footer>
+
+
+
+
+</body>
+
+</html>
